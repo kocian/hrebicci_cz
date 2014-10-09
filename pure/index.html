@@ -32,7 +32,7 @@
                     'left' : '50%',
                     'top' : '50%',
                     'margin-left' : (-$('.vcenter').width()/2 + 80),
-                    'margin-top' : (-$('.vcenter').height()/2),
+                    'margin-top' : (-$('.vcenter').height()/2) - 160,
                 });
             });
         </script>
@@ -40,22 +40,39 @@
     <body>
         <div class="vcenter" id="wrapper">
         <div id="contact">
-        <address>
-            <p id="phone"><a href="tel:00420774880610">774 880 610</a>
-            <p id="email">hrebicekjan[at]gmail.com</p>
-        </address>
+            <address>
+                <p id="phone"><a href="tel:00420774880610">774 880 610</a>
+                <p id="email">hrebicekjan[at]gmail.com</p>
+            </address>
         </div>
-            <div id="menu">
-                <div class="kolecko oblicej" id="honza">
+            <div id="menu" >
+                <div class="card flip-container" id="honza" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/kolicek_vazny.png" alt="Honza Hrebicek" title="Vazny Honza Hrebicek" />
+                        </div>
+                        <div class="back">
+                            <img src="images/kolicek_vesely.png" alt="Honza Hrebicek" title="Vesely Honza Hrebicek" />
+                        </div>
+                    </div>
                 </div>
-                <div class="kolecko oblicej" id="maruska">
+                <div class="card flip-container" id="maruska" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <img src="images/maruska_vazny.png" alt="Maruska Hrebickova" title="Vazna Maruska" />
+                        </div>
+                        <div class="back">
+                            <img src="images/maruska_vesela.png" alt="Maruska Hrebickova" title="Vesela Maruska" />
+                        </div>
+                    </div>
                 </div>
-                <div class="kolecko" id="logo">
+                <div class="card" id="logo">
+                    <img src="images/logo.png" alt="Hřebíčci: design atelier" title="Hřebíčci: design atelier" />
                 </div>
-            </div>
-            <div id="title">
-                <h1>hřebíčci</h1>
-                <h2>design atelier</h2>
+                <div id="title" class="card">
+                    <h1>hřebíčci</h1>
+                    <h2>design atelier</h2>
+                </div>
             </div>
         </div>
 
